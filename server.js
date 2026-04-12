@@ -20,3 +20,5 @@ app.use('/api/auth', require('./routes/auth'));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`🚀 Server on port ${PORT}`));
+
+app.use('/api/chat', require('./routes/chat'));
